@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: /hyc/test
+  port: 8087
+
+
+spring:
+  mvc:
+    servlet:
+      load-on-startup: 1
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:/test;AUTO_SERVER=TRUE
+    username: sa
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
