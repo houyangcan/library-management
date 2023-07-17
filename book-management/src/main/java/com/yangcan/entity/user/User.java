@@ -50,6 +50,7 @@ public class User {
                 .phone(registerUserDTO.getPhone())
                 .sex(registerUserDTO.getSex())
                 .valid(Boolean.TRUE)
+                .creatTime(new Date())
                 .build();
         return user;
     }
